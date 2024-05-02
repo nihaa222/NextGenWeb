@@ -174,10 +174,7 @@ const Continue = () => {
       <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto">
         <Slider {...settings}>
           {obj.map((item) => (
-            <div
-              key={item.id}
-              className="h-16 w-full rounded-xl min-w-20 p-2 border-2"
-            >
+            <div key={item.id} className="rounded-xl   p-2 border-2">
               <img
                 style={{ width: item.width }}
                 className="h-12 min-w-36 object-cover"

@@ -49,11 +49,10 @@ const Heading = () => {
           <p className="text-[20px]   font-medium">NextGenWeb</p>
         </div>
         <p className="text-center text-[35px] md:text-[50px]  mt-16 font-medium leading-[35px] md:leading-[50px] ">
-          Guaranteed: Website. 6 Figures. 90 Days. Transform. Boost. Success.
+          Power Your Business With A Six Figure Website
         </p>
         <p className="text-center md:text-[16px] text-[12px] text-gray-600 max-w-[450px] mx-auto">
-          Power your business with the 6 Figure Website that has helped 60 Home
-          Services businesses sales to seven figures
+          These websites have helpes132 Business scaled to six figures and more
         </p>
         <div className="flex gap-2 justify-center mt-5 items-center">
           <Button
