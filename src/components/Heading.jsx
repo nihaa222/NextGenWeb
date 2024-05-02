@@ -10,7 +10,7 @@ const variants = {
 
 const Heading = () => {
   return (
-    <div className="grid grid-cols-1 max-w-[600px]  md:grid-cols-grid1 md:max-w-[1200px] mx-auto px-10 ">
+    <div className="grid grid-cols-1 max-w-[600px]  md:grid-cols-grid1 md:max-w-[1200px] mx-auto px-2 md:px-10 ">
       {/* <motion.div
         initial="hidden"
         animate="visible"
