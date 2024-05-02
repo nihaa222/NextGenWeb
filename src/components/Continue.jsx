@@ -177,7 +177,7 @@ const Continue = () => {
             <div key={item.id} className="rounded-xl   p-2 border-2">
               <img
                 style={{ width: item.width }}
-                className="h-12 min-w-36 object-cover"
+                className="h-12 min-w-36  mx-[8px] pb-[10px] pt-[-10px] object-cover"
                 src={item.img}
                 alt={`Image ${item.id}`}
               />
