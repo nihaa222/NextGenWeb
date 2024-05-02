@@ -18,7 +18,7 @@ const Service = ({ id }) => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-36 max-w-[1400px] mx-auto">
-        <div className="md:h-[400px] rounded-3xl h-[350px] w-[320px] md:w-[300px]  bg-blue-200 pt-10 mx-auto">
+        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-blue-200 pt-10 mx-auto">
           <div className="w-[250px] h-[150px] mx-auto ">
             <img className="h-full w-full" src="/phones.jpg"></img>
           </div>
@@ -31,7 +31,7 @@ const Service = ({ id }) => {
           </div>
         </div>
 
-        <div className="md:h-[400px] mt-0 md:-mt-10 rounded-3xl h-[350px] w-[320px] md:w-[300px]  bg-purple-100 pt-10 mx-auto">
+        <div className="md:h-[400px] mt-0 md:-mt-10 rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-purple-100 pt-10 mx-auto">
           <div className="w-[250px] h-[150px] mx-auto bg-white">
             <img src="laptop.jpg"></img>
           </div>
@@ -44,7 +44,7 @@ const Service = ({ id }) => {
           </div>
         </div>
 
-        <div className="md:h-[400px] rounded-3xl h-[340px] w-[320px] md:w-[300px]  bg-yellow-100 pt-10 mx-auto">
+        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-yellow-100 pt-10 mx-auto">
           <div className="w-[250px] h-[150px] mx-auto">
             <img className="w-full h-full" src="promotion.avif"></img>
           </div>

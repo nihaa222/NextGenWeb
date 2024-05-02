@@ -108,7 +108,6 @@ const Home = () => {
       <Features id="features" />
       <Projects id="projects" />
       <Testimonial id="testimonial" />
-
       <Reviews id="reviews" />
 
       {navbarVisible && (

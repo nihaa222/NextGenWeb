@@ -20,7 +20,7 @@ const Reviews = ({ id }) => {
         </p>
         <Acco />
       </div>
-      <div className="max-w-[1200px] text-white py-20 sm:mx-auto mx-[30px] px-10 bg-[#150808d6] rounded-3xl">
+      <div className="max-w-[1300px] text-white py-20 sm:mx-auto mx-[10px] md:mx-[30px] px-10 bg-[#150808d6] rounded-3xl">
         {/* do here */}
         <div className="  grid md:grid-cols-gridfot1">
           <div className="cols-span-3 md:col-span-0">

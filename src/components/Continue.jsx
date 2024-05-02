@@ -189,7 +189,7 @@ const Continue = () => {
         </Slider>
       </div>
 
-      <div className=" mb-36 border-yellow-50 leading-[26px]  md:leading-[35px] bg-yellow-50 text-center mt-20 border-2 rounded-md md:h-[350px] h-[400px] sm:h-[320px] max-w-[800px] mx-[20px] md:mx-auto px-10 md:px-16 pt-10 py-10">
+      <div className=" mb-36 border-yellow-50 leading-[26px]  md:leading-[35px] bg-yellow-50 text-center mt-20 border-2 rounded-md md:h-[350px] h-[500px] sm:h-[320px] max-w-[800px] mx-[20px] md:mx-auto px-10 md:px-16 pt-10 py-10">
         <p className="md:text-[26px] text-[20px]  ">
           Twist took my billion-dollar baby idea, slapped their design magic on
           it, and boom -{" "}
@@ -224,12 +224,12 @@ const Continue = () => {
         <p className="text-center text-[16px] mb-16">
           Our process is as simple as possible
         </p>
-        <div className=" max-w-[1220px] md:mx-auto mx-[20px] text-white">
+        <div className=" max-w-[1220px] md:mx-auto mx-[1px] text-white">
           <Slider {...settings2}>
             {text.map((item) => (
               <div
                 key={item.id}
-                className="bg-black h-[300px]  p-8  w-full flex gap-10 "
+                className="bg-black md:h-[300px] h-[360px] rounded-lg  p-8  w-full flex gap-10 "
               >
                 <div className="">
                   <div className="w-10 h-10 mb-2 rounded-full bg-orange-500 "></div>

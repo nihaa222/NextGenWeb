@@ -15,7 +15,7 @@ const Features = ({ id }) => {
         Here is whu you'll love working with us
       </p>
       <p className="text-center mb-20">Our process is as simple as possible</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-[1400px] mx-auto gap-28  md:gap-40 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-[1400px] mx-auto gap-36  md:gap-40 ">
         <div className="flex flex-col h-[100px] mx-auto w-[270px] gap-4 items-center">
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
