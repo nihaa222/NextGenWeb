@@ -28,17 +28,17 @@ const Reviews = ({ id }) => {
               <div className="w-10 h-10 bg-orange-500 mb-8 rounded-full"></div>
               <p className="font-bold text-[32px] mb-7">Twist</p>
             </div>
-            <p className="text-white">
+            <p className="text-white text-start font-bold text-[16px]">
               Discover our seamless, powerful tools for effortless job searching
               and hiring success"
             </p>
-            <p>
+            <p className="text-start">
               Book a free consultation call today to learn more about our
               services
             </p>
             <div></div>
 
-            <form className="mt-8">
+            <form className="mt-8 ">
               <div>
                 <label>
                   NAME

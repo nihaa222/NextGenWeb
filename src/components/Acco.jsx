@@ -128,7 +128,7 @@ const Acco = () => {
       </Accordion>
       <Accordion
         className="mb-5"
-        expanded={expanded === "panel4"}
+        expanded={expanded === "panel5"}
         onChange={(e, isExpanded) => handleChange(isExpanded, "panel4")}
       >
         <AccordionSummary
@@ -156,8 +156,8 @@ const Acco = () => {
       </Accordion>
       <Accordion
         className="mb-5"
-        expanded={expanded === "panel4"}
-        onChange={(e, isExpanded) => handleChange(isExpanded, "panel4")}
+        expanded={expanded === "panel6"}
+        onChange={(e, isExpanded) => handleChange(isExpanded, "panel6")}
       >
         <AccordionSummary
           id="panel4-header"
@@ -185,8 +185,8 @@ const Acco = () => {
       </Accordion>
       <Accordion
         className="mb-5"
-        expanded={expanded === "panel4"}
-        onChange={(e, isExpanded) => handleChange(isExpanded, "panel4")}
+        expanded={expanded === "panel7"}
+        onChange={(e, isExpanded) => handleChange(isExpanded, "panel7")}
       >
         <AccordionSummary
           id="panel4-header"

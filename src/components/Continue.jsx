@@ -168,7 +168,7 @@ const Continue = () => {
 
   return (
     <div className=" mt-[150px] mb-[100px]">
-      <p className="md:text-[35px] text-[20px] text-semibold text-center mb-[40px] ">
+      <p className="md:text-[30px] text-[20px] text-semibold text-center mb-[40px] ">
         Top companies trust us with their design
       </p>
       <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto">
@@ -177,7 +177,7 @@ const Continue = () => {
             <div key={item.id} className="rounded-xl   p-2 border-2">
               <img
                 style={{ width: item.width }}
-                className="h-12 min-w-36  mx-[8px] pb-[10px] pt-[-10px] object-cover"
+                className="h-12 min-w-36  mx-[8px] pb-[8px] pt-[-6px] object-cover"
                 src={item.img}
                 alt={`Image ${item.id}`}
               />

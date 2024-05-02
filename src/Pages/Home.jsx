@@ -16,6 +16,29 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Testimonial from "../components/Testimonial";
 import { FaLongArrowAltUp } from "react-icons/fa";
 
+const ui = [
+  {
+    id: "1",
+    img: "/1.png",
+  },
+  {
+    id: "2",
+    img: "/2.png",
+  },
+  {
+    id: "3",
+    img: "/3.png",
+  },
+  {
+    id: "4",
+    img: "/4.png",
+  },
+  {
+    id: "5",
+    img: "/5.png",
+  },
+];
+
 const Home = () => {
   const targetRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -92,14 +115,22 @@ const Home = () => {
   return (
     <div className="h-screen w-full relative " ref={targetRef}>
       <Heading />
-      <div className="w-full  pt-[250px] overflow-x-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
+      <div className="w-full  pt-[250px] ">
+        <motion.div style={{ x }} className="flex gap-4  ">
+          {ui.map((item) => (
+            <div
+              key={item.id}
+              className="h-[200px] md:h-[400px] min-w-[250px] md:min-w-[300px] "
+            >
+              <img className="h-[350px] -mt-[100px]" src={item.img}></img>
+            </div>
+          ))}
+
+          {/* <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
           <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
           <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
           <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
+          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div> */}
         </motion.div>
       </div>
 
