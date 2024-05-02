@@ -117,15 +117,15 @@ const Home = () => {
   return (
     <div className="h-screen w-full relative " ref={targetRef}>
       <Heading />
-      <div className="w-full  pt-[100px] border-[1px] h-[500px] md:h-[700px]  overflow-x-hidden border-black  ">
+      <div className="w-full  pt-[100px] border-[1px] h-[500px]  md:h-[700px]  overflow-hidden border-black  ">
         <motion.div
           style={{ x }}
-          className="flex gap-4 h-full w-full relative   "
+          className="flex gap-4 h-full w-full relative mt-[20px]  "
         >
           {ui.map((item) => (
             <div
               key={item.id}
-              className="h-[400px]  md:h-[300px] min-w-[250px] md:min-w-[450px] "
+              className="h-[300px] ml-8 md:h-[300px] min-w-[250px] md:min-w-[400px] "
             >
               <img
                 className="rounded-lg"
