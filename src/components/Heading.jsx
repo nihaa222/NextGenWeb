@@ -52,7 +52,7 @@ const Heading = () => {
           Power Your Business With A Six Figure Website
         </p>
         <p className="text-center md:text-[18px] text-[16px] text-gray-600 max-w-[450px] mx-auto">
-          These websites have helpes132 Business scaled to six figures and more
+          These websites have helped Business scaled to six figures and more
         </p>
         <div className="flex gap-2 justify-center mt-5 items-center">
           <Button
