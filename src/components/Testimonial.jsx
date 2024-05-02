@@ -92,8 +92,8 @@ const Testimonial = ({ id }) => {
   return (
     <>
       <section id={id} className="bg-pink  mt-[100px] p-34">
-        <div className="flex justify-center">
-          <img className="h-4 w-4 mb-5" src="none.png"></img>
+        <div className="flex justify-center gap-2 items-center">
+          <img className="h-4 w-4 " src="none.png"></img>
           <p className="text-orange-500">Testimonials</p>
         </div>
         <p className="text-[32px] text-center mb-4">

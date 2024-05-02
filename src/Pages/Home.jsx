@@ -48,20 +48,22 @@ const Home = () => {
 
   const x = useTransform(
     scrollYProgress,
-    [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
     [
-      "-10%",
-      "-30%",
-      "-10%",
+      "100%", // Start from the current position visible on the screen
+      "90%",
+      "60%",
+      "40%",
+      "5%",
+      "1%",
       "-20%",
-      "-10%",
-      "-10%",
-      "-10%",
-      "-10%",
-      "-10%",
-      "-100%",
+      "-30%",
+      "-40%",
+      "-50%",
+      "-60%", // End at the leftmost position
     ]
   );
+
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
@@ -115,14 +117,21 @@ const Home = () => {
   return (
     <div className="h-screen w-full relative " ref={targetRef}>
       <Heading />
-      <div className="w-full  pt-[250px] ">
-        <motion.div style={{ x }} className="flex gap-4  ">
+      <div className="w-full  pt-[100px] border-[1px] h-[500px] md:h-[700px]  overflow-x-hidden border-black  ">
+        <motion.div
+          style={{ x }}
+          className="flex gap-4 h-full w-full relative   "
+        >
           {ui.map((item) => (
             <div
               key={item.id}
-              className="h-[200px] md:h-[400px] min-w-[250px] md:min-w-[300px] "
+              className="h-[400px]  md:h-[300px] min-w-[250px] md:min-w-[450px] "
             >
-              <img className="h-[350px] -mt-[100px]" src={item.img}></img>
+              <img
+                className="rounded-lg"
+                src={item.img}
+                alt={`Image ${item.id}`}
+              ></img>
             </div>
           ))}
 

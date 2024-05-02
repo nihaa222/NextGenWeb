@@ -86,23 +86,14 @@ body {
   margin: 0 30px;
 }
 
-.slick-slider {
-  margin: 0px;
-}
-
-.slick-list {
+* {
   margin: 0;
+  border: 0;
 }
 
-.slick-track {
-  display: flex;
-}
-
-.slick-slide {
-  padding-left: 2 !important;
-  border: none !important;
-}
-
-.slick-initialized .slick-slide {
-  display: flex;
+.overflow-container {
+  width: 100%; /* Ensure it spans the entire width */
+  height: 100%; /* Ensure it spans the entire height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  position: relative; /* Set position to relative */
 }

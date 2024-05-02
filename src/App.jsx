@@ -6,7 +6,9 @@ function App() {
   console.log("paper");
   return (
     <>
-      <Home />
+      <div>
+        <Home className="w-full" />
+      </div>
     </>
   );
 }

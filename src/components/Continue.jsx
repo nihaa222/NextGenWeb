@@ -159,7 +159,7 @@ const Continue = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -167,20 +167,22 @@ const Continue = () => {
   };
 
   return (
-    <div className=" mt-[150px] mb-[100px]">
+    <div className="  mb-[100px]">
       <p className="md:text-[30px] text-[20px] text-semibold text-center mb-[40px] ">
         Top companies trust us with their design
       </p>
-      <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto">
+      <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto border-2 border-black p-2">
         <Slider {...settings}>
           {obj.map((item) => (
-            <div key={item.id} className="rounded-xl   p-2 border-2">
-              <img
-                style={{ width: item.width }}
-                className="h-12 min-w-36  mx-[8px] pb-[8px] pt-[-6px] object-cover"
-                src={item.img}
-                alt={`Image ${item.id}`}
-              />
+            <div key={item.id} className="p-2">
+              <div className="border-[2px] border-black">
+                <img
+                  style={{ width: item.width }}
+                  className="h-12 min-w-36 mx-[8px] pb-[8px] pt-[-6px] object-cover rounded-full"
+                  src={item.img}
+                  alt={`Image ${item.id}`}
+                />
+              </div>
             </div>
           ))}
         </Slider>
@@ -212,7 +214,7 @@ const Continue = () => {
       </div>
       <div className="flex gap-2 items-center justify-center mt-20  ">
         <img className="h-4 w-4 " src="none.png"></img>
-        <p className="text-orange-500 text-[12px]">Process</p>
+        <p className="text-orange-500 text-[16px]">Process</p>
       </div>
       <div className=" mx-auto ">
         <p className="text-center md:text-[36px]  mb-6 text-[24px]  mt-5 ">

@@ -7,9 +7,9 @@ const Service = ({ id }) => {
       id={id}
       className="section text-center flex-col mt-[180px] flex gap-3"
     >
-      <div className="flex  gap-3 justify-center items-center mb-1">
+      <div className="flex  gap-2 justify-center items-center mb-1">
         <img className="h-4 w-4" src="none.png" alt="Service" />
-        <p className="text-center">Services</p>
+        <p className="text-center text-orange-500">Services</p>
       </div>
 
       <p className="text-[32px] leading-9">Apps, websites & branding</p>

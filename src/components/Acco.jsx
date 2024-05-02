@@ -33,7 +33,7 @@ const Acco = () => {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography className="text-center">
+          <Typography className="text-center text-[2px]">
             Our website design services are strategically crafted to drive
             business growth, incorporating lead generation tactics, SEO
             optimization, and conversion-focused design elements tailored

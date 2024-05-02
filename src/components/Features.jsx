@@ -9,10 +9,10 @@ const Features = ({ id }) => {
     <section id={id} className=" mt-[150px] ">
       <div className="flex gap-2 justify-center items-center mb-5">
         <img className="h-4 w-4" src="none.png"></img>
-        <p>Features</p>
+        <p className="text-orange-500">Features</p>
       </div>
       <p className="text-[32px] text-center mb-4  max-w-[600px] mx-auto ">
-        Here is whu you'll love working with us
+        Here is why you'll love working with us
       </p>
       <p className="text-center mb-20">Our process is as simple as possible</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-[1400px] mx-auto gap-36  md:gap-40 ">
