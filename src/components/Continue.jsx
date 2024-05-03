@@ -190,24 +190,23 @@ const Continue = () => {
 
       <div className=" mb-36 border-yellow-50 leading-[26px]  md:leading-[35px] bg-yellow-50 text-center mt-20 border-2 rounded-md md:h-[350px] h-[500px] sm:h-[320px] max-w-[800px] mx-[20px] md:mx-auto px-10 md:px-16 pt-10 py-10">
         <p className="md:text-[26px] text-[20px]  ">
-          Twist took my billion-dollar baby idea, slapped their design magic on
-          it, and boom -{" "}
-          <span className="bg-orange-500 text-white">
-            branding so good it makes my other ventures look like lemonade
-            stands{" "}
+          NextGenWeb took my idea to the next level with that makes my other
+          ventures stand out.
+          <span className="bg-orange-500 text-white mx-2">
+            Their design expertise, creating branding{""}
           </span>
-          Twist isn't just a design agency; they are your ticket to the big
-          leagues
+          that makes my other ventures stand out.They're not just a design
+          agency; they're your ticket to success.
         </p>
         <div className="flex mt-4 md:mt-10 items-center justify-center gap-4">
           <img
             className="h-12 w-12 sm:h-20 sm:w-20 object-cover rounded-full"
-            src="face.jpg"
+            src="testimonial.jpg"
           ></img>
           <div className="">
-            <p className="font-semibold whitespace-nowrap ">Russ Hanneman</p>
+            <p className="font-semibold whitespace-nowrap ">Samantha Harper</p>
             <p className="text-[12px] whitespace-nowrap">
-              Founder of Tres Commas
+              Founder of LuxeLashes
             </p>
           </div>
         </div>

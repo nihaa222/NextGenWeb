@@ -42,25 +42,25 @@ const Projects = ({ id }) => {
           </div>
         </div>
         <div className="flex mt-3 flex-col gap-20">
-          <div className="rounded-3xl h-[500px] w-[400px]  sm:w-[450px]  md:w-[400px] self-center mx-[20px] bg-pink-100">
+          <div className="rounded-3xl h-[500px] w-[400px]  sm:w-[450px]  md:w-[450px] self-center mx-[20px] bg-pink-100">
             <img
               className="object-fit h-full w-full rounded-3xl"
               src="5.png"
             ></img>
           </div>
-          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[400px] self-center mx-[20px] bg-pink-100">
+          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100">
             <img
               className="object-fit h-full w-full rounded-3xl"
               src="3.png"
             ></img>
           </div>
-          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[400px] self-center mx-[20px] bg-pink-100">
+          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100">
             <img
               className="object-fill h-full w-full rounded-3xl"
               src="1.png"
             ></img>
           </div>
-          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[400px] self-center mx-[20px] bg-pink-100">
+          <div className="rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100">
             <img
               className="object-fit h-full w-full rounded-3xl"
               src="5.png"

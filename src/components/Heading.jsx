@@ -49,7 +49,7 @@ const Heading = () => {
             </motion.div>
             <p className="text-[30px] font-bold ">NextGenWeb</p>
           </div>
-          <p className="text-center text-[40px] md:text-[52px]  mt-16 font-bold leading-[35px] md:leading-[50px] ">
+          <p className="text-center text-[40px] md:text-[52px]  mt-16 font-bold leading-[40px] ml-5 md:leading-[50px] ">
             Power Your Business With A Six Figure Website
           </p>
           <p className="text-center md:text-[18px] text-[16px] text-gray-600 max-w-[450px] mx-auto">
@@ -58,24 +58,12 @@ const Heading = () => {
           <div className="flex gap-2 justify-center mt-5 items-center">
             <Button
               variant="contained"
-              size="small"
+              size="large"
               sx={{
                 backgroundColor: "rgb(255, 153, 51)",
                 color: "white",
                 font: "bold",
                 borderRadius: "60px",
-              }}
-            >
-              Book a call
-            </Button>
-            <Button
-              variant="outlined"
-              size="small"
-              sx={{
-                color: "black",
-                font: "semi-bold",
-                borderRadius: "60px",
-                borderColor: "black",
               }}
             >
               Book a call

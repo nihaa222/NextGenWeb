@@ -27,7 +27,7 @@ const Reviews = ({ id }) => {
             <div className="cols-span-3 md:col-span-0">
               <div className="flex items-center gap-3 ">
                 <div className="w-10 h-10 bg-orange-500 mb-8 rounded-full"></div>
-                <p className="font-bold text-[32px] mb-7">Twist</p>
+                <p className="font-bold text-[32px] mb-7">NextGenWeb</p>
               </div>
               <p className="text-white text-start font-bold text-[16px]">
                 Discover our seamless, powerful tools for effortless job

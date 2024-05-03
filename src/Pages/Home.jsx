@@ -37,6 +37,22 @@ const ui = [
     id: "5",
     img: "/5.png",
   },
+  {
+    id: "4",
+    img: "/4.png",
+  },
+  {
+    id: "2",
+    img: "/2.png",
+  },
+  {
+    id: "3",
+    img: "/3.png",
+  },
+  {
+    id: "1",
+    img: "/1.png",
+  },
 ];
 
 const Home = () => {
