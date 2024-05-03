@@ -59,8 +59,8 @@ const Home = () => {
       "-20%",
       "-30%",
       "-40%",
-      "-50%",
-      "-60%", // End at the leftmost position
+      "-80%",
+      "-100%", // End at the leftmost position
     ]
   );
 

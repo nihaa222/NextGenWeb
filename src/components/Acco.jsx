@@ -26,14 +26,14 @@ const Acco = () => {
           aria-controls="panel1-content"
           expandIcon={<ExpandMoreIcon />}
         >
-          <Typography className="text-center">
+          <Typography>
             What strategies do you employ to help roofing companies achieve
             consistent six-figure monthly revenue?
           </Typography>
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography className="text-center text-[2px]">
+          <Typography className=" text-[2px]">
             Our website design services are strategically crafted to drive
             business growth, incorporating lead generation tactics, SEO
             optimization, and conversion-focused design elements tailored
@@ -54,14 +54,14 @@ const Acco = () => {
           aria-controls="panel2-content"
           expandIcon={<ExpandMoreIcon />}
         >
-          <Typography className="text-center">
+          <Typography>
             How quickly can I expect to see results in terms of revenue growth
             after launching a website with your services?
           </Typography>
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography className="text-center">
+          <Typography className="">
             While individual results may vary, many of our clients experience a
             noticeable uptick in revenue shortly after launching their new
             website. By leveraging our expertise in lead generation, conversion
@@ -81,14 +81,14 @@ const Acco = () => {
           aria-controls="panel3-content"
           expandIcon={<ExpandMoreIcon />}
         >
-          <Typography className="text-center">
+          <Typography>
             Can you provide examples of roofing businesses that have achieved
             six-figure monthly revenue with your website design services?
           </Typography>
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography className="text-center">
+          <Typography className="">
             Absolutely! We have numerous success stories of roofing businesses
             that have seen significant revenue growth after partnering with us
             for their website design needs. From increased lead generation to
@@ -143,7 +143,7 @@ const Acco = () => {
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography>
+          <Typography className="text-left">
             Our commitment to client success extends beyond the initial website
             launch. We provide ongoing support, performance monitoring, and
             strategic guidance to ensure that your website continues to perform

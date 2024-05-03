@@ -1,8 +1,16 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-
-import { AiOutlineDingtalk } from "react-icons/ai";
+import { Fa0 } from "react-icons/fa6";
+import { Fa1 } from "react-icons/fa6";
+import { Fa2 } from "react-icons/fa6";
+import { Fa3 } from "react-icons/fa6";
+import { Fa4 } from "react-icons/fa6";
+import { Fa5 } from "react-icons/fa6";
+import { Fa6 } from "react-icons/fa6";
+import { Fa7 } from "react-icons/fa6";
+import { Fa8 } from "react-icons/fa6";
+import { Fa9 } from "react-icons/fa6";
 
 const Features = ({ id }) => {
   return (
@@ -20,8 +28,8 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa0 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
@@ -36,14 +44,13 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="hole.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa1 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
             <p className="font-semibold text-[22px]">Device-Friendly Design</p>
             <p>
-              {" "}
               Accessibility drives increased traffic, leading to higher
               conversion rates and revenue.
             </p>
@@ -53,8 +60,8 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa3 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
@@ -70,12 +77,12 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="hole.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa4 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap mt-2">
               Efficient CRM Integration*
             </p>
             <p>
@@ -88,12 +95,12 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa5 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-none">
               Compelling Visual Showcase
             </p>
             <p>
@@ -106,8 +113,8 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="hole.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa6 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
@@ -125,8 +132,8 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa7 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
@@ -142,12 +149,12 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="hole.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa8 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap">
               Project Management System
             </p>
             <p>
@@ -160,8 +167,8 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[30px] left-[30px]   mx-auto">
+              <Fa9 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
@@ -176,12 +183,13 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="hole.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[25px] left-[20px]  flex  mx-auto">
+              <Fa1 color="white" size="20px" />
+              <Fa0 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-wrap">
               Inspiring Project Galleries
             </p>
             <p>
@@ -194,12 +202,13 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[25px] left-[20px]  flex  mx-auto">
+              <Fa1 color="white" size="20px" />
+              <Fa1 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-wrap">
               Transparent Customer Portal
             </p>
             <p>
@@ -212,12 +221,13 @@ const Features = ({ id }) => {
           <div className="relative">
             <img className="h-20 w-20" src="flower.png"></img>
 
-            <div className="absolute top-[20px] left-[25px]   mx-auto">
-              <AiOutlineDingtalk color="white" size="30px" />
+            <div className="absolute top-[25px] left-[20px]  flex  mx-auto">
+              <Fa1 color="white" size="20px" />
+              <Fa2 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap">
               Seamless Payment Process
             </p>
             <p>
