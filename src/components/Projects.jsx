@@ -324,8 +324,8 @@ const Projects = ({ id }) => {
         </div>
       </div>
       <div className="flex justify-center mt-20">
-        <button className=" h-12 w-30 text-bold px-4 rounded-2xl text-white p-2 bg-black">
-          View all projects
+        <button className=" h-12 w-30 text-bold px-4 rounded-2xl text- p-2 bg-orange-500 text-white  ">
+          Book a 15 min call
         </button>
       </div>
     </section>

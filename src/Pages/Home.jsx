@@ -40,7 +40,7 @@ const ui = [
   },
   {
     id: "4",
-    img: "/4.png",
+    img: "/1.png",
   },
   {
     id: "2",
@@ -52,7 +52,7 @@ const ui = [
   },
   {
     id: "1",
-    img: "/1.png",
+    img: "/4.png",
   },
 ];
 
@@ -103,6 +103,7 @@ const Home = () => {
       const triggerPoint = 800; // Adjust based on your needs
 
       setNavbarVisible(scrollPosition > triggerPoint);
+      console.log(navbarVisible);
 
       const visibleSectionId = sections.find((section) => {
         const sectionElement = document.getElementById(section.id);
@@ -172,7 +173,7 @@ const Home = () => {
           style={{ zIndex: 100 }}
           animate={{ y: -80 }}
           transition={{ type: "spring", stiffness: 300, damping: 100 }}
-          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl z-64 -translate-x-1/2 max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
+          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl -translate-x-1/2 max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
         >
           <ul className="flex justify-between gap-4 flex-grow">
             {sections.map((section) => (

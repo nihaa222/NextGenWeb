@@ -167,7 +167,7 @@ const Continue = () => {
   };
 
   return (
-    <div className="  mb-[100px]">
+    <div className="  mb-[100px] overflow-hidden">
       <p className="md:text-[30px] text-[20px] text-semibold text-center mb-[40px] ">
         Top companies trust us with their design
       </p>
@@ -222,7 +222,7 @@ const Continue = () => {
         <p className="text-center text-[16px] mb-16">
           Our process is as simple as possible
         </p>
-        <div className=" max-w-[1220px] md:mx-auto mx-[1px] text-white">
+        <div className=" max-w-[1200px] md:mx-auto mx-[1px] text-white">
           <Slider {...settings2}>
             {text.map((item) => (
               <div

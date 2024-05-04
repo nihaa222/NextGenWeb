@@ -14,7 +14,7 @@ import { Fa9 } from "react-icons/fa6";
 
 const Features = ({ id }) => {
   return (
-    <section id={id} className=" mt-[150px] ">
+    <section id={id} className=" mt-[150px]">
       <div className="flex gap-2 justify-center items-center mb-5">
         <img className="h-4 w-4" src="none.png"></img>
         <p className="text-orange-500">Features</p>
