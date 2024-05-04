@@ -171,11 +171,11 @@ const Continue = () => {
       <p className="md:text-[30px] text-[20px] text-semibold text-center mb-[40px] ">
         Top companies trust us with their design
       </p>
-      <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto border-2 border-black p-2">
+      <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto  p-2">
         <Slider {...settings}>
           {obj.map((item) => (
             <div key={item.id} className="p-2">
-              <div className="border-[2px] border-black">
+              <div className="k">
                 <img
                   style={{ width: item.width }}
                   className="h-12 min-w-36 mx-[8px] pb-[8px] pt-[-6px] object-cover rounded-full"

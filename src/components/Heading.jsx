@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { setModelState, setCrossState } from "../redux/modelSlice";
+import { useSelector } from "react-redux";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -9,8 +12,49 @@ const variants = {
 };
 
 const Heading = () => {
+  const { open } = useSelector((state) => state.model);
+  const dispatch = useDispatch();
+
   return (
     <>
+      {open && (
+        <div
+          key="model"
+          className="fixed inset-0 flex justify-center items-center z-50  "
+        >
+          <div className="w-[350px] rounded-3xl sm:w-[450px] h-[420px] bg-white   -mt-56">
+            <form className="flex w-full flex-col justify-center items-center mt-36">
+              <p className="mb-4 -mt-10 font-bold">Book Now!</p>
+              <label className="">
+                <span className="">Name</span>
+                <input
+                  className="border-2 border-color-gray ml-4 mb-4 px-2"
+                  placeholder="Name"
+                ></input>
+              </label>
+              <label>
+                <span>Email</span>
+                <input
+                  className="border-2 border-color-gray ml-4 px-2"
+                  placeholder="email"
+                ></input>
+              </label>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "rgb(255, 153, 51)",
+                  color: "white",
+                  font: "bold",
+                  borderRadius: "60px",
+                  marginTop: "20px",
+                }}
+              >
+                Submit
+              </Button>
+            </form>
+          </div>
+        </div>
+      )}
       <div className="grid grid-cols-1 max-w-[600px] mx-auto  md:grid-cols-grid1 md:max-w-[1200px] px-2 md:px-10 ">
         {/* <motion.div
         initial="hidden"
@@ -57,6 +101,7 @@ const Heading = () => {
           </p>
           <div className="flex gap-2 justify-center mt-5 items-center">
             <Button
+              onClick={() => dispatch(setModelState())}
               variant="contained"
               size="large"
               sx={{
