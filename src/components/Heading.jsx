@@ -23,7 +23,7 @@ const Heading = () => {
           key="model"
           className="fixed inset-0 flex justify-center items-center z-50  "
         >
-          <div className="w-[350px] rounded-3xl sm:w-[450px] h-[420px] bg-white mr-6   -mt-64">
+          <div className="w-[350px] rounded-3xl sm:w-[450px] h-[420px] bg-white   -mt-64">
             <button onClick={() => dispatch(setCrossState())}>
               <GiCrossedBones
                 color="orange"
