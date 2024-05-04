@@ -88,12 +88,13 @@ body {
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.overflow-container {
-  width: 100%; /* Ensure it spans the entire width */
-  height: 100%; /* Ensure it spans the entire height */
-  overflow-x: hidden; /* Hide horizontal overflow */
-  position: relative; /* Set position to relative */
+#root {
+  position: relative;
+  overflow: auto;
+  margin: 0;
+  box-sizing: border-box;
 }
