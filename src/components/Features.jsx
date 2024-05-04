@@ -14,7 +14,7 @@ import { Fa9 } from "react-icons/fa6";
 
 const Features = ({ id }) => {
   return (
-    <section id={id} className=" mt-[150px]">
+    <section id={id} className=" mt-[150px] max-w-[1200px] mx-auto">
       <div className="flex gap-2 justify-center items-center mb-5">
         <img className="h-4 w-4" src="none.png"></img>
         <p className="text-orange-500">Features</p>
@@ -23,12 +23,12 @@ const Features = ({ id }) => {
         Here is why you'll love working with us
       </p>
       <p className="text-center mb-20">Our process is as simple as possible</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-[1400px] mx-auto gap-36  md:gap-40 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 max-w-[1400px] mx-auto gap-x-8 gap-y-36   ">
         <div className="flex flex-col h-[100px] mx-auto w-[270px] gap-4 items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
-            <div className="absolute top-[30px] left-[30px]   mx-auto">
+            <div className="absolute top-[30px] left-[30px]  mx-auto">
               <Fa0 color="white" size="20px" />
             </div>
           </div>
@@ -58,7 +58,7 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col mx-auto h-[100px] gap-4 w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[30px] left-[30px]   mx-auto">
               <Fa3 color="white" size="20px" />
@@ -82,7 +82,7 @@ const Features = ({ id }) => {
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap mt-2">
+            <p className="font-semibold text-[22px]  mt-2 whitespace-nowrap lg:whitespace-normal">
               Efficient CRM Integration*
             </p>
             <p>
@@ -93,14 +93,14 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col h-[100px] mx-auto w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[30px] left-[30px]   mx-auto">
               <Fa5 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-none">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal">
               Compelling Visual Showcase
             </p>
             <p>
@@ -130,7 +130,7 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col mx-auto h-[100px] w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[30px] left-[30px]   mx-auto">
               <Fa7 color="white" size="20px" />
@@ -154,7 +154,7 @@ const Features = ({ id }) => {
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal ">
               Project Management System
             </p>
             <p>
@@ -165,14 +165,14 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col mx-auto h-[100px] w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[30px] left-[30px]   mx-auto">
               <Fa9 color="white" size="20px" />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px]">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal">
               Convenient Appointment Booking
             </p>
             <p></p>Easy scheduling maximizes client consultations, leading to
@@ -189,7 +189,7 @@ const Features = ({ id }) => {
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-wrap">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal">
               Inspiring Project Galleries
             </p>
             <p>
@@ -200,7 +200,7 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col mx-auto h-[100px] w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[25px] left-[20px]  flex  mx-auto">
               <Fa1 color="white" size="20px" />
@@ -208,7 +208,7 @@ const Features = ({ id }) => {
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap md:whitespace-wrap">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal ">
               Transparent Customer Portal
             </p>
             <p>
@@ -219,7 +219,7 @@ const Features = ({ id }) => {
         </div>
         <div className="flex flex-col mx-auto h-[100px] w-[270px] items-center">
           <div className="relative">
-            <img className="h-20 w-20" src="flower.png"></img>
+            <img className="h-20 w-20 mb-3" src="flower.png"></img>
 
             <div className="absolute top-[25px] left-[20px]  flex  mx-auto">
               <Fa1 color="white" size="20px" />
@@ -227,7 +227,7 @@ const Features = ({ id }) => {
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-[22px] whitespace-nowrap">
+            <p className="font-semibold text-[22px] whitespace-nowrap lg:whitespace-normal ">
               Seamless Payment Process
             </p>
             <p>

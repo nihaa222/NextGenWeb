@@ -73,7 +73,7 @@ const Projects = ({ id }) => {
   const [isHovered8, setIsHovered8] = useState(false);
 
   return (
-    <section id={id} className=" mt-[150px] w-full">
+    <section id={id} className=" mt-[150px] w-full max-w-[1200px] mx-auto">
       <div>
         <div className="flex gap-3 mb-5 justify-center mt-[200px]">
           <img className="h-4 w-4" src="none.png"></img>
@@ -84,15 +84,15 @@ const Projects = ({ id }) => {
         </p>
         <p className="mb-24 text-center">Get a glimpse of out work</p>
       </div>
-      <div className="flex-col flex md:flex-row max-w-[1000px] gap-20 mx-auto  ">
+      <div className="flex-col flex lg:flex-row gap-20 lg:gap-16 justify-around max-w-[900px] lg:max-w-[1200px] mx-auto ">
         <div className="flex flex-col gap-20  ">
           <div
-            className="relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
+            className="relative rounded-3xl h-[500px]  w-[350px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
             onMouseEnter={() => setIsHovered1(true)}
             onMouseLeave={() => setIsHovered1(false)}
           >
             <img
-              className="object-fit h-full w-full rounded-3xl"
+              className="object-fit lg:object-fit h-full w-full rounded-3xl"
               src="1.png"
               alt="Description"
             />
@@ -116,7 +116,7 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
+            className=" relative rounded-3xl h-[500px] w-[350px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
@@ -146,7 +146,7 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
+            className=" relative rounded-3xl h-[500px] w-[350px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
             onMouseEnter={() => setIsHovered3(true)}
             onMouseLeave={() => setIsHovered3(false)}
           >
@@ -175,12 +175,12 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
+            className=" relative rounded-3xl h-[500px] w-[350px] sm:w-[450px] self-center mx-[20px] bg-blue-100"
             onMouseEnter={() => setIsHovered4(true)}
             onMouseLeave={() => setIsHovered4(false)}
           >
             <img
-              className="object-cover h-full w-full rounded-3xl"
+              className="object-fit h-full w-full rounded-3xl"
               src="4.png"
             ></img>
             {isHovered4 && (
@@ -206,7 +206,7 @@ const Projects = ({ id }) => {
         </div>
         <div className="flex flex-col  gap-20">
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px]  sm:w-[450px]  md:w-[450px] self-center mx-[20px] bg-pink-100"
+            className=" relative rounded-3xl h-[500px] w-[350px]    sm:w-[450px] self-center mx-[20px] bg-pink-100"
             onMouseEnter={() => setIsHovered5(true)}
             onMouseLeave={() => setIsHovered5(false)}
           >
@@ -235,7 +235,7 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100"
+            className=" relative rounded-3xl h-[500px] w-[350px]  sm:w-[450px] self-center mx-[20px] bg-pink-100"
             onMouseEnter={() => setIsHovered6(true)}
             onMouseLeave={() => setIsHovered6(false)}
           >
@@ -264,7 +264,7 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100"
+            className=" relative rounded-3xl h-[500px] w-[350px]  sm:w-[450px] self-center mx-[20px] bg-pink-100"
             onMouseEnter={() => setIsHovered7(true)}
             onMouseLeave={() => setIsHovered7(false)}
           >
@@ -275,7 +275,7 @@ const Projects = ({ id }) => {
             {isHovered7 && (
               <>
                 <div className="absolute inset-0 flex  justify-center z-100  ">
-                  <div className="absolute  inset-0  bg-black opacity-70"></div>
+                  <div className="absolute  inset-0 rounded-3xl  bg-black opacity-70"></div>
                   <motion.div
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
@@ -293,7 +293,7 @@ const Projects = ({ id }) => {
             )}
           </div>
           <div
-            className=" relative rounded-3xl h-[500px] w-[400px] sm:w-[450px] md:w-[450px] self-center mx-[20px] bg-pink-100"
+            className=" relative rounded-3xl h-[500px] w-[350px]  sm:w-[450px] self-center mx-[20px] bg-pink-100"
             onMouseEnter={() => setIsHovered8(true)}
             onMouseLeave={() => setIsHovered8(false)}
           >
@@ -304,7 +304,7 @@ const Projects = ({ id }) => {
             {isHovered8 && (
               <>
                 <div className="absolute inset-0 flex  justify-center z-100  ">
-                  <div className="absolute rounded-b-3xl  inset-0  bg-black opacity-70"></div>
+                  <div className="absolute rounded-b-3xl  inset-0 rounded-3xl  bg-black opacity-70"></div>
                   <motion.div
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
@@ -325,7 +325,7 @@ const Projects = ({ id }) => {
       </div>
       <div className="flex justify-center mt-20">
         <button className=" h-12 w-30 text-bold px-4 rounded-2xl text- p-2 bg-orange-500 text-white  ">
-          Book a 15 min call
+          Book a 15 min chat
         </button>
       </div>
     </section>

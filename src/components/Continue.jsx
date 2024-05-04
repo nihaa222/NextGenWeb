@@ -168,7 +168,7 @@ const Continue = () => {
 
   return (
     <div className="  mb-[100px] overflow-hidden">
-      <p className="md:text-[30px] text-[20px] text-semibold text-center mb-[40px] ">
+      <p className="md:text-[30px] text-[20px] text-semibold  text-center mb-[40px] ">
         Top companies trust us with their design
       </p>
       <div className="max-w-[1400px] mt-[10 mb-[100px] mx-auto  p-2">
@@ -188,8 +188,8 @@ const Continue = () => {
         </Slider>
       </div>
 
-      <div className=" mb-36 border-yellow-50 leading-[26px]  md:leading-[35px] bg-yellow-50 text-center mt-20 border-2 rounded-md md:h-[350px] h-[500px] sm:h-[320px] max-w-[800px] mx-[20px] md:mx-auto px-10 md:px-16 pt-10 py-10">
-        <p className="md:text-[26px] text-[20px]  ">
+      <div className=" mb-36 border-yellow-50 leading-[26px]  md:leading-[35px] bg-yellow-50 text-center mt-20 border-2 rounded-xl md:h-[440px] h-[450px] sm:h-[380px] max-w-[800px] mx-[20px] md:mx-auto px-10 md:px-16 pt-10 py-10">
+        <p className="md:text-[26px] text-[20px]  mt-10 ">
           NextGenWeb took my idea to the next level with that makes my other
           ventures stand out.
           <span className="bg-orange-500 text-white mx-2">

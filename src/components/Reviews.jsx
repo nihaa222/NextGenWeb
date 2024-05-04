@@ -21,7 +21,7 @@ const Reviews = ({ id }) => {
         <Acco />
       </div>
       <div className="w-full flex justify-center">
-        <div className="max-w-[1300px] text-white md:px-20 py-20 mx-auto mx-[10px] md:mx-[30px] px-10 bg-[#150808d6] rounded-3xl">
+        <div className="max-w-[1300px] text-white md:px-20 py-20 mx-auto mx-[10px] md:mx-[30px] px-10 bg-[#150808d6] rounded-none sm:rounded-t-3xl">
           {/* do here */}
           <div className="  grid md:grid-cols-gridfot1 gap-5">
             <div className="cols-span-3 md:col-span-0">

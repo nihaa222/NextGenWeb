@@ -8,37 +8,37 @@ const obj = [
   {
     talk: "Since partnering with [Your Website Design Business Name], our online presence has skyrocketed. Their expertly crafted website not only attracts more leads but converts them into paying clients effortlessly. Thanks to their tailored approach, we've experienced consistent six-figure months, a testament to their commitment to our business growth.",
     name: "John Smith",
-    img: "male1.jpg",
+    img: "testiman.jpg",
     position: "Owner of Apex Roofing Solutions",
   },
   {
     talk: "Choosing Next Gen Web Crafts was a game-changer for us. Their understanding of the roofing industry coupled with their sleek designs has transformed our business. We now enjoy a steady stream of high-quality leads, resulting in six-figure months like clockwork. Their website solutions are a cornerstone of our success. ",
     name: "Sarah Johnson",
-    img: "female1.jpg",
+    img: "testiwoman.jpg",
     position: "CEO of Plumbpro",
   },
   {
     talk: "I can't emphasize enough how vital Next Gen Web Crafts has been for our growth. Their websites are not just visually appealing but strategically designed to drive conversions. Thanks to their expertise, we've consistently achieved six-figure months, positioning us as leaders in the competitive roofing industry.",
     name: "Michael Thompson",
-    img: "1.jpg",
+    img: "testiman2.jpg",
     position: "Founder of GreenScape",
   },
   {
     talk: "Working with Next Gen Web Crafts has been a game-changer for our business. Their websites are tailor-made for roofing companies like ours, focusing on generating leads and driving revenue. Thanks to their innovative approach, we've seen unparalleled growth, with six-figure months becoming the norm.",
     name: "Emily Rodriguez",
-    img: "female2.jpg",
+    img: "testiwoman2.jpg",
     position: "President of TerraWorks",
   },
   {
     talk: "Our decision to partner with Next Gen Web Crafts has paid off beyond measure. Their websites are not just aesthetically pleasing but strategically crafted to attract our target audience. The result? Consistent six-figure months that have propelled our business to new heights. They truly understand the language of business growth in the roofing industry.",
     name: "David Harris",
-    img: "male2.jpg",
+    img: "testiman3.jpg",
     position: "Owner of Elite Roofing Solutions",
   },
   {
     talk: "Choosing Next Gen Web Crafts was the best investment we made for our business. Their expertise in designing websites for roofing companies is unparalleled. Thanks to their innovative solutions, we've experienced exponential growth, consistently achieving six-figure months. Their impact on our business cannot be overstated.",
     name: "Jessica Carter",
-    img: "female4.jpg",
+    img: "testiwoman3.jpg",
     position: "CEO of AquaCare",
   },
 ];
@@ -109,7 +109,7 @@ const Testimonial = ({ id }) => {
                 <div className="text-center mb-8 md:mb-4">"{item.talk}"</div>
                 <div className="flex gap-4 justify-center mb-8">
                   <img
-                    className="w-20 h-20 rounded-full"
+                    className="w-20 h-20 rounded-full "
                     src={item.img}
                     alt={item.name}
                   />

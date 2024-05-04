@@ -5,7 +5,7 @@ const Service = ({ id }) => {
   return (
     <section
       id={id}
-      className="section text-center flex-col mt-[180px] flex gap-3"
+      className="section text-center flex-col mt-[130px] flex gap-3"
     >
       <div className="flex  gap-2 justify-center items-center mb-1">
         <img className="h-4 w-4" src="none.png" alt="Service" />
@@ -17,13 +17,13 @@ const Service = ({ id }) => {
         Get everything you need in one place
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-36 max-w-[1400px] mx-auto">
-        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-blue-200 pt-10 mx-auto">
-          <div className="w-[250px] h-[150px] mx-auto ">
-            <img className="h-full w-full" src="/phones.jpg"></img>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 max-w-[1400px] mx-auto">
+        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] sm:w-[400px] lg:w-[300px]  bg-blue-200 pt-10 mx-auto">
+          <div className="w-[280px] sm:w-[350px] lg:w-[250px] h-[150px] mx-auto  ">
+            <img className="h-full w-full object-fit" src="/phones.jpg"></img>
           </div>
           <div className="flex flex-col mx-[30px]">
-            <p className="text-[32px] mt-4">Build</p>
+            <p className="text-[32px] mt-8">Build</p>
             <p>
               Our expert team crafts custom apps, websites, and marketing
               solutions tailored to your business needs and goals.
@@ -31,12 +31,12 @@ const Service = ({ id }) => {
           </div>
         </div>
 
-        <div className="md:h-[400px] mt-0 md:-mt-10 rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-purple-100 pt-10 mx-auto">
-          <div className="w-[250px] h-[150px] mx-auto bg-white">
-            <img src="laptop.jpg"></img>
+        <div className="md:h-[400px] mt-0 lg:-mt-10 rounded-3xl h-[420px] w-[320px] sm:w-[400px] lg:w-[300px]  bg-purple-100 pt-10 mx-auto">
+          <div className="w-[280px] sm:w-[350px] lg:w-[250px] h-[150px] mx-auto bg-white">
+            <img className="h-full w-full object-fit" src="laptop.jpg"></img>
           </div>
           <div className="flex flex-col mx-[30px]">
-            <p className="text-[32px] mt-4">Deploy</p>
+            <p className="text-[32px] mt-8">Deploy</p>
             <p>
               We seamlessly launch your products, ensuring smooth integration
               and optimal performance across all platforms.
@@ -44,12 +44,12 @@ const Service = ({ id }) => {
           </div>
         </div>
 
-        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] md:w-[300px]  bg-yellow-100 pt-10 mx-auto">
-          <div className="w-[250px] h-[150px] mx-auto">
+        <div className="md:h-[400px] rounded-3xl h-[420px] w-[320px] sm:w-[400px] lg:w-[300px]   bg-yellow-100 pt-10 mx-auto">
+          <div className="w-[280px] sm:w-[350px] lg:w-[250px] h-[150px] mx-auto">
             <img className="w-full h-full" src="promotion.avif"></img>
           </div>
           <div className="flex flex-col mx-[30px]">
-            <p className="text-[32px] mt-4">Promote</p>
+            <p className="text-[32px] mt-8">Promote</p>
             <p>
               Utilizing strategic marketing techniques, we drive traffic and
               engagement to your apps and websites, maximizing your online
@@ -58,7 +58,7 @@ const Service = ({ id }) => {
           </div>
         </div>
       </div>
-      <button className="flex justify-center text-white font-bold hover:bg-orange-300 rounded-3xl items-center w-[200px] h-[50px] mx-auto bg-orange-500 ">
+      <button className="flex justify-center mt-5 text-white font-bold hover:bg-orange-300 rounded-3xl items-center w-[200px] h-[50px] mx-auto bg-orange-500 ">
         Book a 15-min call
       </button>
     </section>
