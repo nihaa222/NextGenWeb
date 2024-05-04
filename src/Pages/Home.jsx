@@ -168,9 +168,10 @@ const Home = () => {
 
       {navbarVisible && (
         <motion.nav
+          style={{ zIndex: 100 }}
           animate={{ y: -80 }}
           transition={{ type: "spring", stiffness: 300, damping: 100 }}
-          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl -translate-x-1/2 max-w-[390px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
+          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl z-64 -translate-x-1/2 max-w-[390px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
         >
           <ul className="flex justify-between gap-6 flex-grow">
             {sections.map((section) => (

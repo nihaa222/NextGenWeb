@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { setModelState, setCrossState } from "../redux/modelSlice";
 import { useSelector } from "react-redux";
+import { GiCrossedBones } from "react-icons/gi";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -23,6 +24,12 @@ const Heading = () => {
           className="fixed inset-0 flex justify-center items-center z-50  "
         >
           <div className="w-[350px] rounded-3xl sm:w-[450px] h-[420px] bg-white   -mt-56">
+            <button onClick={() => dispatch(setCrossState())}>
+              <GiCrossedBones
+                color="orange"
+                className="relative left-[180px] md:left-[440px] -top-6"
+              />
+            </button>
             <form className="flex w-full flex-col justify-center items-center mt-36">
               <p className="mb-4 -mt-10 font-bold">Book Now!</p>
               <label className="">
@@ -40,6 +47,7 @@ const Heading = () => {
                 ></input>
               </label>
               <Button
+                onClick={() => dispatch(setCrossState())}
                 variant="contained"
                 sx={{
                   backgroundColor: "rgb(255, 153, 51)",
