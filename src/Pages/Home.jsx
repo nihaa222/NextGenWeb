@@ -15,6 +15,7 @@ import Projects from "../components/Projects";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Testimonial from "../components/Testimonial";
 import { FaLongArrowAltUp } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const ui = [
   {
@@ -56,6 +57,7 @@ const ui = [
 ];
 
 const Home = () => {
+  const { open } = useSelector((state) => state.model);
   const targetRef = useRef();
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -165,15 +167,14 @@ const Home = () => {
       <Projects id="projects" />
       <Testimonial id="testimonial" />
       <Reviews id="reviews" />
-
-      {navbarVisible && (
+      {!open && navbarVisible && (
         <motion.nav
           style={{ zIndex: 100 }}
           animate={{ y: -80 }}
           transition={{ type: "spring", stiffness: 300, damping: 100 }}
-          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl z-64 -translate-x-1/2 max-w-[390px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
+          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl z-64 -translate-x-1/2 max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
         >
-          <ul className="flex justify-between gap-6 flex-grow">
+          <ul className="flex justify-between gap-4 flex-grow">
             {sections.map((section) => (
               <li key={section.id}>
                 <Link
@@ -192,7 +193,7 @@ const Home = () => {
           </ul>
           <button
             onClick={() => handleScrollToTop()}
-            className="back-to-top ml-3 mr-4 "
+            className="back-to-top ml-3 mr-4"
           >
             <FaLongArrowAltUp size="20px" />
           </button>
