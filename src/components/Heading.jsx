@@ -93,8 +93,8 @@ const Heading = () => {
               initial="hidden"
               animate="visible"
               variants={variants}
-              transition={{ duration: 1 }}
-              whileHover="hover"
+              transition={{ duration: 1, yoyo: Infinity }}
+              whileInView="hover"
               className="flex items-center   gap-2 justify-center"
             >
               <img className="h-[31px] w-[28.89px]" src="none.png"></img>
