@@ -203,7 +203,7 @@ const Heading = () => {
           Book a call
         </Button>
       </div>
-      <p className="flex justify-center gap-4 self-center items-center -mt-20 ">
+      <p className="flex justify-center gap-4 self-center items-center -mt-10 ">
         <img src="none.png" className="h-4 w-4" alt="Image"></img>
         <p className="whitespace-nowrap font-bold text-[20px]">
           A Glimpse Into Our Portfolio

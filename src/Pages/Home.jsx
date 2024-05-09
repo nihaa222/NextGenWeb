@@ -114,7 +114,7 @@ const Home = () => {
   return (
     <div className="h-screen w-full relative">
       <Heading />
-      <div className="w-full pt-[100px] h-[500px] md:h-[700px] overflow-hidden border-black">
+      <div className="w-full pt-[100px] h-[500px] md:h-[700px] -mt-10  overflow-hidden border-black">
         <Slider {...settings}>
           {ui.map((item) => (
             <div key={item.id}>
