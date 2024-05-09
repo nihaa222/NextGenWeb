@@ -1,50 +1,55 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-
 import Slider from "react-slick";
-
-const obj = [
-  {
-    talk: "Since partnering with [Your Website Design Business Name], our online presence has skyrocketed. Their expertly crafted website not only attracts more leads but converts them into paying clients effortlessly. Thanks to their tailored approach, we've experienced consistent six-figure months, a testament to their commitment to our business growth.",
-    name: "John Smith",
-    img: "testiman.jpg",
-    position: "Owner of Apex Roofing Solutions",
-  },
-  {
-    talk: "Choosing Next Gen Web Crafts was a game-changer for us. Their understanding of the roofing industry coupled with their sleek designs has transformed our business. We now enjoy a steady stream of high-quality leads, resulting in six-figure months like clockwork. Their website solutions are a cornerstone of our success. ",
-    name: "Sarah Johnson",
-    img: "testiwoman.jpg",
-    position: "CEO of Plumbpro",
-  },
-  {
-    talk: "I can't emphasize enough how vital Next Gen Web Crafts has been for our growth. Their websites are not just visually appealing but strategically designed to drive conversions. Thanks to their expertise, we've consistently achieved six-figure months, positioning us as leaders in the competitive roofing industry.",
-    name: "Michael Thompson",
-    img: "testiman2.jpg",
-    position: "Founder of GreenScape",
-  },
-  {
-    talk: "Working with Next Gen Web Crafts has been a game-changer for our business. Their websites are tailor-made for roofing companies like ours, focusing on generating leads and driving revenue. Thanks to their innovative approach, we've seen unparalleled growth, with six-figure months becoming the norm.",
-    name: "Emily Rodriguez",
-    img: "testiwoman2.jpg",
-    position: "President of TerraWorks",
-  },
-  {
-    talk: "Our decision to partner with Next Gen Web Crafts has paid off beyond measure. Their websites are not just aesthetically pleasing but strategically crafted to attract our target audience. The result? Consistent six-figure months that have propelled our business to new heights. They truly understand the language of business growth in the roofing industry.",
-    name: "David Harris",
-    img: "testiman3.jpg",
-    position: "Owner of Elite Roofing Solutions",
-  },
-  {
-    talk: "Choosing Next Gen Web Crafts was the best investment we made for our business. Their expertise in designing websites for roofing companies is unparalleled. Thanks to their innovative solutions, we've experienced exponential growth, consistently achieving six-figure months. Their impact on our business cannot be overstated.",
-    name: "Jessica Carter",
-    img: "testiwoman3.jpg",
-    position: "CEO of AquaCare",
-  },
-];
 
 const Testimonial = ({ id }) => {
   const [dotActive, setDotActive] = useState();
+  const [loaded, setLoaded] = useState(false); // State to track whether content is loaded
+
+  const obj = [
+    {
+      talk: "Since partnering with [Your Website Design Business Name], our online presence has skyrocketed. Their expertly crafted website not only attracts more leads but converts them into paying clients effortlessly. Thanks to their tailored approach, we've experienced consistent six-figure months, a testament to their commitment to our business growth.",
+      name: "John Smith",
+      img: "testiman.jpg",
+      position: "Owner of Apex Roofing Solutions",
+    },
+    {
+      talk: "Choosing Next Gen Web Crafts was a game-changer for us. Their understanding of the roofing industry coupled with their sleek designs has transformed our business. We now enjoy a steady stream of high-quality leads, resulting in six-figure months like clockwork. Their website solutions are a cornerstone of our success. ",
+      name: "Sarah Johnson",
+      img: "testiwoman.jpg",
+      position: "CEO of Plumbpro",
+    },
+    {
+      talk: "I can't emphasize enough how vital Next Gen Web Crafts has been for our growth. Their websites are not just visually appealing but strategically designed to drive conversions. Thanks to their expertise, we've consistently achieved six-figure months, positioning us as leaders in the competitive roofing industry.",
+      name: "Michael Thompson",
+      img: "testiman2.jpg",
+      position: "Founder of GreenScape",
+    },
+    {
+      talk: "Working with Next Gen Web Crafts has been a game-changer for our business. Their websites are tailor-made for roofing companies like ours, focusing on generating leads and driving revenue. Thanks to their innovative approach, we've seen unparalleled growth, with six-figure months becoming the norm.",
+      name: "Emily Rodriguez",
+      img: "testiwoman2.jpg",
+      position: "President of TerraWorks",
+    },
+    {
+      talk: "Our decision to partner with Next Gen Web Crafts has paid off beyond measure. Their websites are not just aesthetically pleasing but strategically crafted to attract our target audience. The result? Consistent six-figure months that have propelled our business to new heights. They truly understand the language of business growth in the roofing industry.",
+      name: "David Harris",
+      img: "testiman3.jpg",
+      position: "Owner of Elite Roofing Solutions",
+    },
+    {
+      talk: "Choosing Next Gen Web Crafts was the best investment we made for our business. Their expertise in designing websites for roofing companies is unparalleled. Thanks to their innovative solutions, we've experienced exponential growth, consistently achieving six-figure months. Their impact on our business cannot be overstated.",
+      name: "Jessica Carter",
+      img: "testiwoman3.jpg",
+      position: "CEO of AquaCare",
+    },
+  ];
+
+  useEffect(() => {
+    // Set loaded to true when the component mounts
+    setLoaded(true);
+  }, []);
+
   var settings = {
     dots: true,
     infinite: true,
@@ -61,7 +66,7 @@ const Testimonial = ({ id }) => {
       <div
         style={{
           marginTop: "30px",
-          positon: "absolute",
+          position: "absolute", // Corrected typo
           top: "90%",
         }}
       >
@@ -81,7 +86,6 @@ const Testimonial = ({ id }) => {
             : {
                 color: "transparent",
                 borderTop: "3px white solid",
-
                 padding: "3px 0",
                 cursor: "pointer",
               }
@@ -89,41 +93,43 @@ const Testimonial = ({ id }) => {
       ></div>
     ),
   };
+
   return (
     <>
-      <section id={id} className="bg-pink  mt-[150px] p-34">
+      <section id={id} className="bg-pink mt-[150px] p-34">
         <div className="flex justify-center gap-2 items-center">
-          <img className="h-4 w-4 " src="none.png"></img>
+          <img className="h-4 w-4 " src="none.png" alt="none"></img>
           <p className="text-orange-500">Testimonials</p>
         </div>
         <p className="text-[32px] text-center mb-4">
-          Don't just take out word for it.Take theirs
+          Don't just take our word for it. Take theirs
         </p>
         <p className="text-center mb-20">
           What our customers say about our work
         </p>
         <div className="bg-yellow-100 max-w-[600px] md:max-w-[800px] rounded-3xl  text-black mx-[30px] sm:mx-auto px:12 md:px-20 pt-10 pb-20 ">
-          <Slider {...settings}>
-            {obj.map((item) => (
-              <div key={item.img} className="">
-                <div className="text-center mb-8 md:mb-4">"{item.talk}"</div>
-                <div className="flex gap-4 justify-center mb-8">
-                  <img
-                    className="w-20 h-20 rounded-full "
-                    src={item.img}
-                    alt={item.name}
-                  />
-                  <div className="flex flex-col gap-3 justify-center">
-                    <p>{item.name}</p>
-                    <p>{item.position}</p>
+          {loaded && ( // Render slider content only when loaded state is true
+            <Slider {...settings}>
+              {obj.map((item) => (
+                <div key={item.img} className="">
+                  <div className="text-center mb-8 md:mb-4">"{item.talk}"</div>
+                  <div className="flex gap-4 justify-center mb-8">
+                    <img
+                      className="w-20 h-20 rounded-full "
+                      src={item.img}
+                      alt={item.name}
+                    />
+                    <div className="flex flex-col gap-3 justify-center">
+                      <p>{item.name}</p>
+                      <p>{item.position}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          )}
         </div>
       </section>
-      )
     </>
   );
 };

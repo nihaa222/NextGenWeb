@@ -138,7 +138,7 @@ const Home = () => {
 
       {!open && navbarVisible && (
         <nav
-          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl -translate-x-1/2 max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
+          className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl  max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
           style={{ zIndex: 100 }}
         >
           <ul className="flex justify-between gap-4 flex-grow">

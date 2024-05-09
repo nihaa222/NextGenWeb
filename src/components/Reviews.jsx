@@ -21,15 +21,15 @@ const Reviews = ({ id }) => {
         <Acco />
       </div>
       <div className="w-full flex justify-center">
-        <div className="max-w-[1300px] text-white md:px-20 py-20 mx-auto mx-[10px] md:mx-[30px] px-10 bg-[#150808d6] rounded-none sm:rounded-t-3xl">
+        <div className="max-w-[1300px] text-white md:px-20 py-20 gap-20 mx-auto mx-[10px] md:mx-[30px] px-10 bg-[#150808d6] rounded-none sm:rounded-t-3xl">
           {/* do here */}
           <div className="  grid md:grid-cols-gridfot1 gap-5">
             <div className="cols-span-3 md:col-span-0">
-              <div className="flex items-center gap-3 ">
+              <div className="flex items-center gap-3  ">
                 <div className="w-10 h-10 bg-orange-500 mb-8 rounded-full"></div>
                 <p className="font-bold text-[32px] mb-7">NextGenWeb</p>
               </div>
-              <p className="text-white text-start font-bold text-[16px]">
+              <p className="text-white text-start font-bold text-[16px]   ">
                 Discover our seamless, powerful tools for effortless job
                 searching and hiring success"
               </p>
