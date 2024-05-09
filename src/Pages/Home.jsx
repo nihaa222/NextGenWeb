@@ -1,87 +1,33 @@
-import React from "react";
-
-import { useEffect, useState, useMemo, useRef } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Link } from "react-scroll";
+import Slider from "react-slick";
+import { FaLongArrowAltUp } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import Heading from "../components/Heading";
-// import { FaLongArrowAltUp } from "react-icons/fa";
-
 import Continue from "../components/Continue";
 import Service from "../components/Service";
-
 import Reviews from "../components/Reviews";
 import Features from "../components/Features";
 import Projects from "../components/Projects";
-
-import { useScroll, useTransform, motion } from "framer-motion";
 import Testimonial from "../components/Testimonial";
-import { FaLongArrowAltUp } from "react-icons/fa";
-import { useSelector } from "react-redux";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ui = [
-  {
-    id: "1",
-    img: "/1.png",
-  },
-  {
-    id: "2",
-    img: "/2.png",
-  },
-  {
-    id: "3",
-    img: "/3.png",
-  },
-  {
-    id: "4",
-    img: "/4.png",
-  },
-  {
-    id: "5",
-    img: "/5.png",
-  },
-  {
-    id: "4",
-    img: "/1.png",
-  },
-  {
-    id: "2",
-    img: "/2.png",
-  },
-  {
-    id: "3",
-    img: "/3.png",
-  },
-  {
-    id: "1",
-    img: "/4.png",
-  },
+  { id: "1", img: "/1.png" },
+  { id: "2", img: "/2.png" },
+  { id: "3", img: "/3.png" },
+  { id: "4", img: "/4.png" },
+  { id: "5", img: "/5.png" },
+  { id: "6", img: "/1.png" },
+  { id: "7", img: "/2.png" },
+  { id: "8", img: "/3.png" },
+  { id: "9", img: "/4.png" },
 ];
 
 const Home = () => {
   const { open } = useSelector((state) => state.model);
-  const targetRef = useRef();
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"],
-  });
-
-  const x = useTransform(
-    scrollYProgress,
-    [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-    [
-      "100%", // Start from the current position visible on the screen
-      "90%",
-      "60%",
-      "40%",
-      "5%",
-      "1%",
-      "-20%",
-      "-30%",
-      "-40%",
-      "-80%",
-      "-100%", // End at the leftmost position
-    ]
-  );
-
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
@@ -90,7 +36,6 @@ const Home = () => {
       { id: "service", title: "Service" },
       { id: "features", title: "Features" },
       { id: "projects", title: "Projects" },
-
       { id: "testimonial", title: "Testimonial" },
       { id: "reviews", title: "Reviews" },
     ],
@@ -101,15 +46,12 @@ const Home = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const triggerPoint = 800; // Adjust based on your needs
-
       setNavbarVisible(scrollPosition > triggerPoint);
-      console.log(navbarVisible);
 
       const visibleSectionId = sections.find((section) => {
         const sectionElement = document.getElementById(section.id);
         if (!sectionElement) return false;
         const sectionTop = sectionElement.offsetTop;
-
         const sectionHeight = sectionElement.offsetHeight;
         return (
           scrollPosition >= sectionTop &&
@@ -133,33 +75,58 @@ const Home = () => {
     });
   };
 
+  const settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="h-screen w-full relative " ref={targetRef}>
+    <div className="h-screen w-full relative">
       <Heading />
-      <div className="w-full  pt-[100px]  h-[500px]  md:h-[700px]  overflow-hidden border-black  ">
-        <motion.div
-          style={{ x }}
-          className="flex gap-4 h-full w-full relative mt-[20px]  "
-        >
+      <div className="w-full pt-[100px] h-[500px] md:h-[700px] overflow-hidden border-black">
+        <Slider {...settings}>
           {ui.map((item) => (
-            <div
-              key={item.id}
-              className="h-[300px] ml-8 md:h-[300px] min-w-[250px] md:min-w-[400px] "
-            >
+            <div key={item.id}>
               <img
                 className="rounded-lg"
                 src={item.img}
                 alt={`Image ${item.id}`}
-              ></img>
+                style={{ border: "none" }} // Add style to remove border
+              />
             </div>
           ))}
-
-          {/* <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div>
-          <div className="h-[200px] md:h-[300px] min-w-[250px] md:min-w-[300px] bg-black"></div> */}
-        </motion.div>
+        </Slider>
       </div>
 
       <Continue id="continue" />
@@ -168,12 +135,11 @@ const Home = () => {
       <Projects id="projects" />
       <Testimonial id="testimonial" />
       <Reviews id="reviews" />
+
       {!open && navbarVisible && (
-        <motion.nav
-          style={{ zIndex: 100 }}
-          animate={{ y: -80 }}
-          transition={{ type: "spring", stiffness: 300, damping: 100 }}
+        <nav
           className="fixed bottom-0 left-0 right-0 mx-auto transform rounded-3xl -translate-x-1/2 max-w-[370px] text-[12px] bg-black p-4 text-white flex items-center justify-between"
+          style={{ zIndex: 100 }}
         >
           <ul className="flex justify-between gap-4 flex-grow">
             {sections.map((section) => (
@@ -192,13 +158,10 @@ const Home = () => {
               </li>
             ))}
           </ul>
-          <button
-            onClick={() => handleScrollToTop()}
-            className="back-to-top ml-3 mr-4"
-          >
+          <button onClick={handleScrollToTop} className="back-to-top ml-3 mr-4">
             <FaLongArrowAltUp size="20px" />
           </button>
-        </motion.nav>
+        </nav>
       )}
     </div>
   );

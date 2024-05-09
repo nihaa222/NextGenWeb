@@ -84,6 +84,7 @@ body {
 
 .slick-slide > div {
   margin: 0 30px;
+  border: 0;
 }
 
 * {
@@ -92,9 +93,18 @@ body {
   box-sizing: border-box;
 }
 
+/* global.css */
+:focus {
+  outline: none;
+}
+
 #root {
   position: relative;
 
   margin: 0;
   box-sizing: border-box;
+}
+
+.min-h-min-content {
+  min-height: min-content;
 }
