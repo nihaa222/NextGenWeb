@@ -6,7 +6,7 @@ const Service = ({ id }) => {
   return (
     <section
       id={id}
-      className="section text-center flex-col mt-[130px] flex gap-3"
+      className="section text-center flex-col mt-[130px] flex gap-3 overflow-hidden"
     >
       <div className="flex gap-2 justify-center items-center mb-1">
         <img className="h-4 w-4" src="none.png" alt="Service" />
